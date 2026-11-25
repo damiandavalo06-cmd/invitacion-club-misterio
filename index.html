@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Club Misterio · Invitación de cumpleaños</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PORTADA: linterna en la oscuridad -->
+<section id="intro">
+  <div class="reveal">
+    <img class="ghost" src="images/logo.jpg" alt="Club Misterio">
+    <h1 class="club">CLUB MISTERIO</h1>
+    <p>¡Estás invitado a un cumple de misterio!</p>
+  </div>
+  <div class="dark"></div>
+  <p class="hint">🔦 Mové la linterna para descubrir el misterio</p>
+  <button id="abrir" class="btn">ABRIR LA PUERTA</button>
+  <div class="flash"></div>
+</section>
+
+<!-- INVITACIÓN -->
+<main id="invite" hidden>
+  <div class="fog"></div>
+  <button id="sonido" aria-label="Música">🔊</button>
+  <div class="floaters" id="floaters"></div>
+
+  <header class="hero">
+    <img class="logo" src="images/logo.jpg" alt="Club Misterio">
+    <h1 class="club">CLUB MISTERIO</h1>
+    <p class="kick">Te invitan al cumple de</p>
+    <h2 class="nombre" id="nombre"></h2>
+    <div class="edad"><b id="edad">10</b><small>AÑOS</small></div>
+    <a href="#cuenta" class="down" aria-label="Seguir">▼</a>
+  </header>
+
+  <section class="sec rv" id="cuenta">
+    <h3>Faltan para el misterio…</h3>
+    <div id="count">
+      <div><b id="d">00</b><small>días</small></div>
+      <div><b id="h">00</b><small>horas</small></div>
+      <div><b id="m">00</b><small>min</small></div>
+      <div><b id="s">00</b><small>seg</small></div>
+    </div>
+    <p id="fin" hidden>¡EL CLUB YA ESTÁ ABIERTO! 🔦</p>
+  </section>
+
+  <section class="sec rv">
+    <h3>El detective del cumple</h3>
+    <div class="polas">
+      <figure><img src="fotos/francisco1.jpg" alt="Foto 1"><figcaption>Francisco 🔦</figcaption></figure>
+      <figure><img src="fotos/francisco2.jpg" alt="Foto 2"><figcaption>Francisco 👻</figcaption></figure>
+      <figure><img src="fotos/francisco3.jpg" alt="Foto 3"><figcaption>Francisco 🕵️</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec rv">
+    <h3>Los chicos del Club</h3>
+    <div class="marq"><div class="track" id="track"></div></div>
+  </section>
+
+  <section class="sec rv">
+    <h3>Datos del misterio</h3>
+    <div class="info">
+      <div>📅 <span id="fechaTxt"></span></div>
+      <div>⏰ <span id="horaTxt"></span></div>
+      <div>📍 <span id="lugarTxt"></span></div>
+      <div id="notaBox">🎭 <span id="notaTxt"></span></div>
+    </div>
+    <a id="como" class="btn map" target="_blank" rel="noopener">🧭 Cómo llegar (Google Maps)</a>
+  </section>
+
+  <section class="sec rv rsvp">
+    <h3>¿Te sumás al Club?</h3>
+    <input id="quien" placeholder="Tu nombre" autocomplete="name">
+    <select id="cant"><option>1 persona</option><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option></select>
+    <button id="ok" class="btn wa">✅ Confirmar por WhatsApp</button>
+    <button id="no" class="btn alt">No puedo ir</button>
+  </section>
+
+  <footer><span>¡Te esperamos en el Club Misterio! 👻</span></footer>
+</main>
+
+<div id="lb" hidden><img alt="Foto ampliada"></div>
+<audio id="musica" src="musica/backrooms.mp3" loop preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>

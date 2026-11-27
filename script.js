@@ -1,13 +1,13 @@
 /* ====== EDITÁ SOLO ESTO ====== */
 const CONFIG = {
-  nombre: 'Francisco Salva Josue',
+  nombre: 'Francisco Josue Salva',
   edad: 10,
   fecha: '2026-12-13T15:00:00',            // AAAA-MM-DDTHH:MM:SS
   horario: 'De 15:00 a 19:00 hs',
   lugar: 'Salón de fiestas "ASIA EVENTOS"',
   direccion: 'Salta Capital, Argentina mar de java 440, A4400',    // calle y número para que Google Maps marque el lugar exacto
   whatsapp: '5493875116582',                // código país + área + número, sin + ni espacios
-  nota: '', // dejalo vacío ('') para ocultarlo
+  nota: 'VENIR CON ROPA PARA PILETA', // dejalo vacío ('') para ocultarlo
   grupo: ['grupo1', 'grupo2', 'grupo3', 'grupo4', 'grupo5', 'grupo6'] // fotos de /images (.jpg)
 };
 /* ============================== */
